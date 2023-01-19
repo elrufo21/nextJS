@@ -1,11 +1,12 @@
 import React from "react";
+import Router from "next/router";
 
 function Users(props) {
   return (
     <ul className="list-group">
       {props.users.map((user) => (
         <li key={user.id} className="list-group-item list-group-item-action
-        d-flex justify-content-between align-items-center">
+        d-flex justify-content-between align-items-center" onClick={e=>Router.push("/users/[id]",`users/${user.id}`)}>
           <div>
             <h5>{user.first_name} </h5>
             <p>{user.email} </p>

@@ -4,6 +4,7 @@ import fetch from "isomorphic-fetch";
 import Users from "../components/Users";
 
 function index(props) {
+  
   return (
     <Container>
       <Head>

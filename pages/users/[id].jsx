@@ -7,7 +7,7 @@ const User = ({user}) => {
   return <Container>
     <div className="row">
         <div className="col-md-6 offset-md-3">
-            <div className="card">
+            <div className="card" >
                 <div className="card-header text-center">
                     <img src={user.avatar}  alt="" style={{borderRadius:"50%"}} />
                 </div>
